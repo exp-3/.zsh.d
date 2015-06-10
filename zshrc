@@ -1,7 +1,7 @@
 #################################################################
 #ZSH Setting File
 #This file is written using [http://blog.blueblack.net/item_204]
-#Time-stamp: <2015-06-11 03:01:24 takaaki>
+#Time-stamp: <2015-06-11 03:16:06 takaaki>
 #################################################################
 
 #----------------------------------------------------------------
@@ -220,9 +220,9 @@ alias qwer="pkill firefox"
 alias ks="ls"
 alias sls="ls"
 alias lsl="ls"
-alias la="ls -a"
+alias la="=ls --color -a"
 alias ll="ls -lc"
-alias lla="ls -alc"
+alias lla="=ls --color -alc"
 alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
 alias g++="g++ -std=c++14 -Wall -Wextra -Wconversion"
 alias clang="clang-3.5 -std=c++14 -Wall -Wextra -Wconversion"
