@@ -1,4 +1,6 @@
+CURRENT_DIR := $(shell cd $(dirname $0); pwd)
+
 .Phony: install
 
 install:
-	ln -sb `pwd`/zshrc $(HOME)/.zshrc
+	echo "source $(CURRENT_DIR)/.zsh.d/zshrc" >> $(HOME)/.zshrc
