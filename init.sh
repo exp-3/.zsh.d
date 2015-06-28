@@ -1,7 +1,9 @@
+#!/bin/zsh
+
 #################################################################
 #ZSH Setting File
 #This file is written using [http://blog.blueblack.net/item_204]
-#Time-stamp: <2015-06-11 03:16:06 takaaki>
+#Time-stamp: <2015-06-27 01:26:53 takaaki>
 #################################################################
 
 #----------------------------------------------------------------
@@ -207,7 +209,8 @@ cdls ()
 
 alias minicom="LANG=C minicom"
 alias ls="ls --color -B"
-alias e="emacs"
+alias emacs="emacsclient -cqa ''"
+alias e="emacsclient -cqa ''"
 alias l="ls"
 alias v="vim"
 alias c="cat"
@@ -227,7 +230,7 @@ alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
 alias g++="g++ -std=c++14 -Wall -Wextra -Wconversion"
 alias clang="clang-3.5 -std=c++14 -Wall -Wextra -Wconversion"
 alias clang++="clang++-3.5 -std=c++14 -Wall -Wextra -Wconversion"
-alias sl="$HOME/workspace/temp/test.sh"
+alias sl="$HOME/Workspace/temp/test.sh"
 alias cd="cdls"
 alias du="du -ah --max-depth=1"
 
