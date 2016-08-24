@@ -3,7 +3,7 @@
 #################################################################
 #ZSH Setting File
 #This file is written using [http://blog.blueblack.net/item_204]
-#Time-stamp: <2015-06-27 01:26:53 takaaki>
+#Time-stamp: <2015-11-20 14:01:23 takaaki>
 #################################################################
 
 #----------------------------------------------------------------
@@ -170,10 +170,13 @@ function _hogecmd {
 }
 
 
-
+##############################################
+#環境変数の設定
+##############################################
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
 export LSCOLORS=gxfxxxxxcxxxxxxxxxxxxx
+export RUST_SRC_PATH=/usr/local/src/rust/src
 
 ##############################################
 #ZSH Color Setting File
@@ -207,6 +210,7 @@ cdls ()
     \cd "$@" && ls --color -B
 }
 
+#alias
 alias minicom="LANG=C minicom"
 alias ls="ls --color -B"
 alias emacs="emacsclient -cqa ''"
@@ -227,9 +231,10 @@ alias la="=ls --color -a"
 alias ll="ls -lc"
 alias lla="=ls --color -alc"
 alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
-alias g++="g++ -std=c++14 -Wall -Wextra -Wconversion"
-alias clang="clang-3.5 -std=c++14 -Wall -Wextra -Wconversion"
-alias clang++="clang++-3.5 -std=c++14 -Wall -Wextra -Wconversion"
+alias gcc="gcc -std=c99 -Wall -Wextra -lm"
+alias g++="g++ -std=c++14 -Wall -Wextra"
+alias clang="clang -std=c99 -Wall -Wextra -lm"
+alias clang++="clang++ -std=c++14 -Wall -Wextra"
 alias sl="$HOME/Workspace/temp/test.sh"
 alias cd="cdls"
 alias du="du -ah --max-depth=1"
